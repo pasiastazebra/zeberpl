@@ -8,8 +8,8 @@ import { RouterLink, RouterView } from 'vue-router'
       <img alt="logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
       <nav>
         <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/contact">Contact</RouterLink>
         <RouterLink to="/projects">Projects</RouterLink>
+        <RouterLink to="/contact">Contact</RouterLink>
       </nav>
     </div>
   </header>
@@ -23,20 +23,18 @@ import { RouterLink, RouterView } from 'vue-router'
 </template>
 
 <style lang="scss">
+@use './assets/variables' as var;
+
 @import url('https://fonts.googleapis.com/css2?family=Sarabun&display=swap');
 
 //color variables
 
-$bgprimary: #19376D;
-$bgsecondary: #0B2447;
-$title: #576CBC;
-$text: #A5D7E8;
 
 //navbar and footer styles
 .wrapper {
-  background-color: $bgsecondary;
+  //background-color: $bgsecondary;
   margin: 0%;
-  text-align: center;
+  text-align: right;
   width: 100%;
 }
 
@@ -47,25 +45,48 @@ $text: #A5D7E8;
 
 .footer {
   position: absolute;
+  text-align: center;
   bottom: 0px;
+
+  a {
+    display: inline-block;
+    padding: 0 25px;
+    font-size: 20px;
+    text-decoration: none;
+    color: var.$text;
+  }
+}
+.logo {
+  float: left;
+}
+nav {
+  margin-right: 35px;
+  
+  a {
+    display: inline-block;
+    padding: 0 25px;
+    font-size: 20px;
+    text-decoration: none;
+    color: var.$text;
+  }
 }
 
 //global styles
 
 body {
   font-family: 'Sarabun', sans-serif;
-  background-color: $bgprimary;
+  background-color: var.$background;
   margin: 0%;
   padding-top: 0%;
   padding-bottom: 0%;
 }
 
 h1, h2, h3 {
-  color: $title;
+  color: var.$text;
 }
 
 p {
-  color: $text;
+  color: var.$text;
 }
 
 </style>
