@@ -17,8 +17,9 @@ import { RouterLink, RouterView } from 'vue-router'
   <RouterView />
 
   <footer class="wrapper footer">
-    <p class="wrapper-text">This site is open source! Feel free to check the code</p>
-    <a href="https://github.com/pasiastazebra/zeberpl">there!</a>
+    <p class="wrapper-text">This site is open source! Feel free to check the code
+      <a href="https://github.com/pasiastazebra/zeberpl">there!</a>
+    </p>
   </footer>
 </template>
 
@@ -26,9 +27,6 @@ import { RouterLink, RouterView } from 'vue-router'
 @use './assets/variables' as var;
 
 @import url('https://fonts.googleapis.com/css2?family=Sarabun&display=swap');
-
-//color variables
-
 
 //navbar and footer styles
 .wrapper {
@@ -45,15 +43,25 @@ import { RouterLink, RouterView } from 'vue-router'
 
 .footer {
   position: absolute;
+  background-color: #00000025;
   text-align: center;
   bottom: 0px;
 
+  p {
+    font-size: 12px;
+  }
+
   a {
     display: inline-block;
-    padding: 0 25px;
-    font-size: 20px;
+    padding: 0 2px;
+    font-size: 13px;
     text-decoration: none;
-    color: var.$text;
+    color: darken($color: var.$text, $amount: 3%);
+    transition: 0.2s;
+    &:hover {
+      font-size: 15px;
+      color: darken($color: var.$text, $amount: 10%);
+    }
   }
 }
 .logo {
