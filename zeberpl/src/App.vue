@@ -26,12 +26,28 @@ import { RouterLink, RouterView } from 'vue-router'
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Sarabun&display=swap');
 
+//color variables
+
+$bgprimary: #19376D;
+$bgsecondary: #0B2447;
+$title: #576CBC;
+$text: #A5D7E8;
+
 //navbar styles
 
 //global styles
 
 body {
   font-family: 'Sarabun', sans-serif;
+  background-color: $bgprimary;
+}
+
+h1, h2, h3 {
+  color: $title;
+}
+
+p {
+  color: $text;
 }
 
 </style>
