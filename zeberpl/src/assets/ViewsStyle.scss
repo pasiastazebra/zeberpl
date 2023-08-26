@@ -3,7 +3,12 @@
 .article-wrapper {
     margin: 30px;
     padding: 2px 20px;
-    background-color: var.$primary;
     border-radius: 25px;
     min-height: 80vh;
+
+    background: var.$primary;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.3px);
+    -webkit-backdrop-filter: blur(8.3px);
 }
