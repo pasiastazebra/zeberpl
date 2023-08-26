@@ -10,5 +10,5 @@
 </template>
 
 <style scoped lang="scss">
- @use "../../assets/ViewsStyle.scss";
+ @use "../../assets/ViewsStyle";
 </style>

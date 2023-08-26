@@ -76,7 +76,17 @@ nav {
     font-size: 20px;
     text-decoration: none;
     color: var.$text;
+    transition: 0.3s;
+
+    &.router-link-exact-active {
+      color: darken($color: var.$text, $amount: 20%);
+    }
+
+    &:hover {
+      color: darken($color: var.$text, $amount: 10%);
+    }
   }
+
 }
 
 //global styles
