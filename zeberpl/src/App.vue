@@ -4,9 +4,9 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <header>
-    <img alt="logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
+    
     <div class="wrapper">
+      <img alt="logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/contact">Contact</RouterLink>
@@ -16,8 +16,22 @@ import { RouterLink, RouterView } from 'vue-router'
   </header>
 
   <RouterView />
+
+  <footer>
+    <p>This site is open source! Feel free to check the code</p>
+    <a href="https://github.com/pasiastazebra/zeberpl">there!</a>
+  </footer>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Sarabun&display=swap');
+
+//navbar styles
+
+//global styles
+
+body {
+  font-family: 'Sarabun', sans-serif;
+}
 
 </style>
