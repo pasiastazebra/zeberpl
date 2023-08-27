@@ -57,7 +57,7 @@ import { RouterLink, RouterView } from 'vue-router'
     font-size: 13px;
     text-decoration: none;
     color: darken($color: var.$text, $amount: 3%);
-    transition: 0.2s;
+    transition: 0.3s;
     &:hover {
       font-size: 15px;
       color: darken($color: var.$text, $amount: 10%);
