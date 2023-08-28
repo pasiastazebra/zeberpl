@@ -59,6 +59,21 @@ const iKnow = [
     }
 ];
 
+const ilearn = [
+    {
+        url: 'src/assets/stack/ilearn/react.svg',
+        title: 'React.js'
+    },
+    {
+        url: 'src/assets/stack/imfam/gatsby.svg',
+        title: 'Gatsby.js'
+    },
+    {
+        url: 'src/assets/stack/ilearn/node.svg',
+        title: 'Node.js'
+    }
+];
+
 </script>
 
 <template>
@@ -69,7 +84,8 @@ const iKnow = [
         <h2>(Not only) tech stack</h2>
         <div class="stack">
             <stack :icons="iUse" :title="'I use'"/>
-            <stack :icons="iKnow" :title="'I am familiar with'"/> 
+            <stack :icons="iKnow" :title="'I am familiar with'"/>
+            <stack :icons="ilearn" :title="'I am learning'"/>
         </div>
     </div>
 </template>
