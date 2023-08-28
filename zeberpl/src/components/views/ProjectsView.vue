@@ -11,9 +11,15 @@ function Project (title, img, desc, srcUrl, demoUrl) {
 
 const passwordGenerator = new Project('Password generator', 
                                       'src/assets/projects/password.png',
-                                      'Simply tool to generate a random password matching user-defined properties.',
+                                      'Simple tool to generate a random password matching user-defined properties.',
                                       'https://github.com/pasiastazebra/password-generator',
-                                      'https://pasiastazebra.github.io/password-generator/' );
+                                      'https://pasiastazebra.github.io/password-generator' );
+
+const loginDemo = new Project('Log In form demo', 
+                              'src/assets/projects/login.png',
+                              'Simple Font-End only demo of a log in form. Currently missing browser-side authentication.',
+                              'https://github.com/pasiastazebra/password-generator',
+                              'https://pasiastazebra.github.io/login-form-demo' );
 
 
 </script>
@@ -21,10 +27,19 @@ const passwordGenerator = new Project('Password generator',
 <template>
     <div class="article-wrapper">
         <h1>Projects</h1>
-        <project :project="passwordGenerator" />
+        <div class="projects">
+            <project :project="passwordGenerator" />
+            <project :project="loginDemo" />
+        </div>
+
    </div>
 </template>
 
 <style scoped lang="scss">
  @use "../../assets/ViewsStyle";
+
+ .projects {
+    display: flex;
+    justify-content: center;
+ }
 </style>
