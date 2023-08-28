@@ -8,36 +8,56 @@ const aboutMe = `I am an aspiring Front-End developer for whom it is a priority 
                  In moments of inspiration I also play with vector graphics. Bad coffee is always better than
                  no coffee at all.`;
 
-/* const iKnowIcons = [
-    'src/assets/stack/iknow/bootstrap.svg',
-    'src/assets/stack/iknow/sass.svg',
-    'src/assets/stack/iknow/ts.svg',
-    'src/assets/stack/iknow/vite.svg',
-    'src/assets/stack/iknow/vue.svg',
-]; */
-
-const iKnowIcons = [
+const iUse = [
     {
         url: 'src/assets/stack/iknow/bootstrap.svg',
         title: 'Bootstrap'
     },
     {
-        url: 'src/assets/stack/iknow/sass.svg',
-        title: 'Sass'
+        url: 'src/assets/stack/iknow/illustrator.svg',
+        title: 'Adobe Illustrator'
     },
     {
         url: 'src/assets/stack/iknow/ts.svg',
         title: 'TypeScript'
     },
     {
-        url: 'src/assets/stack/iknow/vue.svg',
-        title: 'Vue.js'
+
+        url: 'src/assets/stack/iknow/sass.svg',
+        title: 'Sass'
     },
     {
         url: 'src/assets/stack/iknow/vite.svg',
         title: 'Vite'
+    },
+    {
+        url: 'src/assets/stack/iknow/vue.svg',
+        title: 'Vue.js'
     }
-]
+];
+
+const iKnow = [
+    {
+        url: 'src/assets/stack/imfam/photoshop.svg',
+        title: 'Adobe Photoshop'
+    },
+    {
+        url: 'src/assets/stack/imfam/gatsby.svg',
+        title: 'Gatsby.js'
+    },
+    {
+        url: 'src/assets/stack/imfam/sql.svg',
+        title: 'MySQL'
+    },
+    {
+        url: 'src/assets/stack/imfam/php.svg',
+        title: 'PHP'
+    },
+    {
+        url: 'src/assets/stack/imfam/tailwind.svg',
+        title: 'Tailwind CSS'
+    }
+];
 
 </script>
 
@@ -46,9 +66,10 @@ const iKnowIcons = [
         <h1>Home</h1>
         <h2>About me</h2>
         <p>{{ aboutMe }}</p>
-        <h2>Tech stack</h2>
+        <h2>(Not only) tech stack</h2>
         <div class="stack">
-            <stack :icons="iKnowIcons" :title="'I am familiar with'"/>  
+            <stack :icons="iUse" :title="'I use'"/>
+            <stack :icons="iKnow" :title="'I am familiar with'"/> 
         </div>
     </div>
 </template>

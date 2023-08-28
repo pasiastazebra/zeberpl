@@ -28,6 +28,9 @@ export default {
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.342);
         backdrop-filter: blur(8.3px);
         -webkit-backdrop-filter: blur(8.3px);
+
+        margin: 5px;
+        min-width: 140px;
     }
     &-title {
         text-align: center;
