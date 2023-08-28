@@ -11,7 +11,7 @@ export default {
         <h3 class="stack-title">{{ title }}</h3>
         <div class="svg-cover">
             <div class="svg-container">
-                <img class="icon" v-for="icon in icons" :src="icon.url" :title="icon.title">
+                <img class="icon" v-for="icon in icons" :src="icon.url" :title="icon.title" :alt="icon.title + ' logo'">
             </div>
         </div>
     </div>
