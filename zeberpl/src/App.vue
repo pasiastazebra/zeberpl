@@ -39,6 +39,11 @@ import { RouterLink, RouterView } from 'vue-router'
 .header {
   position: sticky;
   top: 0;
+  height: 70px;
+}
+
+.logo {
+  margin: -40px 20px;
 }
 
 .footer {
