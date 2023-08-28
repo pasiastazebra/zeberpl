@@ -8,13 +8,36 @@ const aboutMe = `I am an aspiring Front-End developer for whom it is a priority 
                  In moments of inspiration I also play with vector graphics. Bad coffee is always better than
                  no coffee at all.`;
 
-const iKnowIcons = [
+/* const iKnowIcons = [
     'src/assets/stack/iknow/bootstrap.svg',
     'src/assets/stack/iknow/sass.svg',
     'src/assets/stack/iknow/ts.svg',
     'src/assets/stack/iknow/vite.svg',
     'src/assets/stack/iknow/vue.svg',
-];
+]; */
+
+const iKnowIcons = [
+    {
+        url: 'src/assets/stack/iknow/bootstrap.svg',
+        title: 'Bootstrap'
+    },
+    {
+        url: 'src/assets/stack/iknow/sass.svg',
+        title: 'Sass'
+    },
+    {
+        url: 'src/assets/stack/iknow/ts.svg',
+        title: 'TypeScript'
+    },
+    {
+        url: 'src/assets/stack/iknow/vue.svg',
+        title: 'Vue.js'
+    },
+    {
+        url: 'src/assets/stack/iknow/vite.svg',
+        title: 'Vite'
+    }
+]
 
 </script>
 
