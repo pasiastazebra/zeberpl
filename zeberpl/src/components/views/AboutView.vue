@@ -124,6 +124,6 @@ const iWant = [
 
  .stack {
     display: grid;
-    grid-template-columns: 15vw 15vw 15vw 15vw;
+    grid-template-columns: 170px 170px 170px 170px;
  }
 </style>

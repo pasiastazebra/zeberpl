@@ -15,7 +15,7 @@ export default {
             </div>
         </div>
     </div>
-  </template>
+</template>
 
 <style scoped lang="scss">
 @use "../assets/variables" as var;
