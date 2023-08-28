@@ -24,10 +24,17 @@ const iKnowIcons = [
         <h2>About me</h2>
         <p>{{ aboutMe }}</p>
         <h2>Tech stack</h2>
-        <stack :icons="iKnowIcons"/>  
+        <div class="stack">
+            <stack :icons="iKnowIcons" :title="'I am familiar with'"/>  
+        </div>
     </div>
 </template>
 
 <style scoped lang="scss">
  @use "../../assets/ViewsStyle";
+
+ .stack {
+    display: grid;
+    grid-template-columns: 15vw 15vw 15vw;
+ }
 </style>

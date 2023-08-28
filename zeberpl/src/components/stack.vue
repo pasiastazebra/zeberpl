@@ -1,23 +1,47 @@
 <script>
 
 export default {
-    props: ['icons']
+    props: ['icons', 'title']
 }
 
 </script>
 
 <template>
     <div class="stack-container">
-        <div class="svg-container">
-            <img class="icon" v-for="icon in icons" :src="icon">
+        <h3 class="stack-title">{{ title }}</h3>
+        <div class="svg-cover">
+            <div class="svg-container">
+                <img class="icon" v-for="icon in icons" :src="icon">
+            </div>
         </div>
     </div>
   </template>
 
 <style scoped lang="scss">
-.svg-container {
-    display: grid;
-    grid-template-columns: 70px 70px;
+@use "../assets/variables" as var;
+
+.stack{
+
+    &-container {
+        background: var.$secondary;
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.342);
+        backdrop-filter: blur(8.3px);
+        -webkit-backdrop-filter: blur(8.3px);
+    }
+    &-title {
+        text-align: center;
+    }
+}
+.svg{
+    &-container {
+       display: grid;
+       grid-template-columns: 70px 70px;
+    }
+    &-cover {
+        display: flex;
+        justify-content: center;
+    }
 }
 .icon {
     max-width: 60px;
