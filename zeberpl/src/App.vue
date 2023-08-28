@@ -3,24 +3,28 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-  <header class="wrapper header">
-    <div class="inner-header">
-      <img alt="logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/projects">Projects</RouterLink>
-        <RouterLink to="/contact">Contact</RouterLink>
-      </nav>
+  <div class="page">
+    <div class="page-container">
+      <header class="wrapper header">
+        <div class="inner-header">
+          <img alt="logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+          <nav>
+            <RouterLink to="/">Home</RouterLink>
+            <RouterLink to="/projects">Projects</RouterLink>
+            <RouterLink to="/contact">Contact</RouterLink>
+          </nav>
+        </div>
+      </header>
+      
+      <RouterView />
     </div>
-  </header>
-
-  <RouterView />
-
-  <footer class="wrapper footer">
-    <p class="wrapper-text">This site is open source! Feel free to check the code
-      <a href="https://github.com/pasiastazebra/zeberpl">there!</a>
-    </p>
-  </footer>
+    
+    <footer class="wrapper footer">
+      <p class="wrapper-text">This site is open source! Feel free to check the code
+        <a href="https://github.com/pasiastazebra/zeberpl">there!</a>
+      </p>
+    </footer>
+  </div>
 </template>
 
 <style lang="scss">
@@ -29,6 +33,15 @@ import { RouterLink, RouterView } from 'vue-router'
 @import url('https://fonts.googleapis.com/css2?family=Sarabun&display=swap');
 
 //navbar and footer styles
+.page {
+  position: relative;
+  min-height: 100vh;
+
+  &-container {
+    padding-bottom: 2.5rem;
+  }
+}
+
 .wrapper {
   //background-color: $bgsecondary;
   margin: 0%;
@@ -44,6 +57,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
 .logo {
   margin: -40px 20px;
+  
 }
 
 .footer {
@@ -51,6 +65,7 @@ import { RouterLink, RouterView } from 'vue-router'
   background-color: #00000025;
   text-align: center;
   bottom: 0px;
+  height: 2.5rem;
 
   p {
     font-size: 12px;
@@ -98,7 +113,7 @@ nav {
 
 body {
   font-family: 'Sarabun', sans-serif;
-  background-color: var.$background;
+  background: linear-gradient(225deg,var.$background 0%, var.$background-shade 100%);
   margin: 0%;
   padding-top: 0%;
   padding-bottom: 0%;
