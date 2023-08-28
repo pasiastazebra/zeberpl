@@ -74,6 +74,34 @@ const ilearn = [
     }
 ];
 
+const iWant = [
+    {
+        url: 'src/assets/stack/iwant/docker.svg',
+        title: 'Docker'
+    },
+    {
+        url: 'src/assets/stack/iwant/firebase.svg',
+        title: 'Firebase'
+    },
+    {
+        url: 'src/assets/stack/iwant/gql.svg',
+        title: 'GraphQL'
+    },
+    {
+
+        url: 'src/assets/stack/iwant/laravel.svg',
+        title: 'Laravel'
+    },
+    {
+        url: 'src/assets/stack/iwant/pinia.svg',
+        title: 'Pinia'
+    },
+    {
+        url: 'src/assets/stack/iwant/webpack.svg',
+        title: 'Webpack'
+    }
+];
+
 </script>
 
 <template>
@@ -86,6 +114,7 @@ const ilearn = [
             <stack :icons="iUse" :title="'I use'"/>
             <stack :icons="iKnow" :title="'I am familiar with'"/>
             <stack :icons="ilearn" :title="'I am learning'"/>
+            <stack :icons="iWant" :title="'I want to learn'"/>
         </div>
     </div>
 </template>
@@ -95,6 +124,6 @@ const ilearn = [
 
  .stack {
     display: grid;
-    grid-template-columns: 15vw 15vw 15vw;
+    grid-template-columns: 15vw 15vw 15vw 15vw;
  }
 </style>
