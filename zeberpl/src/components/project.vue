@@ -9,13 +9,18 @@ export default {
 <template>
     <div class="project-container">
         <h3 class="project-title">test</h3>
+        <img src="../assets/projects/login.png" alt="" class="project-image">
+        <div class="project-buttons">
+            <button>Source</button>
+            <button>Demo</button>
+        </div>
     </div>
 </template>
 
 <style scoped lang="scss">
 @use "../assets/variables" as var;
 
-.stack{
+.project{
 
     &-container {
         background: var.$secondary;
@@ -25,24 +30,22 @@ export default {
         -webkit-backdrop-filter: blur(8.3px);
 
         margin: 5px;
-        min-width: 140px;
+        width: 45%;
     }
+
     &-title {
         text-align: center;
     }
-}
-.svg{
-    &-container {
-       display: grid;
-       grid-template-columns: 70px 70px;
+
+    &-image {
+        max-width: 90%;
+        margin: 2% 5%;
+        
     }
-    &-cover {
+
+    &-buttons {
         display: flex;
         justify-content: center;
     }
-}
-.icon {
-    max-width: 60px;
-    margin: 5px;
 }
 </style>
