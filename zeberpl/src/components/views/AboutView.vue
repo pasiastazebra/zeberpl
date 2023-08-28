@@ -1,11 +1,17 @@
 <script setup>
 
+const aboutMe = `I am an aspiring Front-End developer for whom it is a priority to constantly expand my horizons.
+                 I want to create websites that are aesthetically pleasing, functional and above all efficient.
+                 Outside of hours I am interested in aviation, sociology, planning and geography in general.
+                 In moments of inspiration I also play with vector graphics. Bad coffee is always better than
+                 no coffee at all.`;
+
 </script>
 
 <template>
     <div class="article-wrapper">
-        <h1>About</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus, urna eget luctus facilisis, tellus eros posuere neque, sed vulputate velit odio at eros. In hac habitasse platea dictumst. Aenean porta tempor massa in facilisis. Pellentesque efficitur lectus eu lobortis feugiat. Etiam feugiat nulla faucibus leo fermentum pulvinar. Fusce suscipit tortor id augue sodales sagittis. Sed luctus, orci ut finibus maximus, sapien justo molestie ex, quis sagittis libero nulla pretium felis. Aenean in nunc ullamcorper lorem pharetra consequat quis eu libero. Duis pharetra at lorem at varius.</p>
+        <h1>About me</h1>
+        <p>{{ aboutMe }}</p>
     </div>
 </template>
 
