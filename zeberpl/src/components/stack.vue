@@ -7,11 +7,20 @@ export default {
 </script>
 
 <template>
-    <div class="svg-container">
-      <img v-for="icon in icons" :src="icon">
+    <div class="stack-container">
+        <div class="svg-container">
+            <img class="icon" v-for="icon in icons" :src="icon">
+        </div>
     </div>
   </template>
 
 <style scoped lang="scss">
- @use "../assets/SectionStyle";
+.svg-container {
+    display: grid;
+    grid-template-columns: 70px 70px;
+}
+.icon {
+    max-width: 60px;
+    margin: 5px;
+}
 </style>
