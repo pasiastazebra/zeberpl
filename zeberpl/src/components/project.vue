@@ -8,16 +8,16 @@ export default {
 
 <template>
     <div class="project-container">
-        <h3 class="project-title">test</h3>
-        <img src="../assets/projects/login.png" alt="" class="project-image">
-        <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptatum atque dolorem sapiente ut, unde repellat eius adipisci! Molestiae voluptatibus tenetur repudiandae molestias officiis eum eligendi, sapiente error quis ducimus!</p>
+        <h3 class="project-title">{{ project.title }}</h3>
+        <img :src="project.img" :alt="project.title + ' screenshot'" class="project-image">
+        <p class="project-description">{{ project.desc }}</p>
         <div class="project-buttons">
-            <div class="project-buttons-cover">
-                <button id="source" class="button">Source</button>
-            </div>
-            <div class="project-buttons-cover">
-                <button id="demo" class="button">Demo</button>
-            </div>
+            <form class="project-buttons-cover">
+                <button :formaction="project.srcUrl" :title="project.srcUrl" id="source" class="button">Source</button>
+            </form>
+            <form class="project-buttons-cover">
+                <button :formaction="project.demoUrl" :title="project.demoUrl" id="demo" class="button">Demo</button>
+            </form>
         </div>
     </div>
 </template>
