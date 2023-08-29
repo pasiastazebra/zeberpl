@@ -38,12 +38,16 @@ const iUse = [
 
 const iKnow = [
     {
-        url: 'src/assets/stack/imfam/photoshop.svg',
-        title: 'Adobe Photoshop'
+        url: 'src/assets/stack/ilearn/react.svg',
+        title: 'React.js'
     },
     {
         url: 'src/assets/stack/imfam/gatsby.svg',
         title: 'Gatsby.js'
+    },
+    {
+        url: 'src/assets/stack/imfam/photoshop.svg',
+        title: 'Adobe Photoshop'
     },
     {
         url: 'src/assets/stack/imfam/sql.svg',

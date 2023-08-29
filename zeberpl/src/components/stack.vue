@@ -55,6 +55,7 @@ export default {
     &:hover {
         scale: 125%;
         rotate: 15deg;
+        cursor: help;
     }
 }
 </style>
