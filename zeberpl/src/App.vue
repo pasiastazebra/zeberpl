@@ -4,6 +4,11 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <div class="page">
+    <div class="bg-icons">
+      <img class="floating-icon position-1" src="./assets/bgicons/keyboard.svg" alt="Floating keyboard icon">
+      <img class="floating-icon position-2" src="./assets/bgicons/monitor.svg" alt="Floating monitor icon">
+      <img class="floating-icon position-3" src="./assets/bgicons/mouse.svg" alt="Floating mouse icon">
+    </div>
     <div class="page-container">
       <header class="wrapper header">
         <div class="inner-header">
@@ -41,6 +46,8 @@ import { RouterLink, RouterView } from 'vue-router'
   position: relative;
   min-height: 100vh;
 
+  contain: paint; // <<-- Preventing animations to extend the website height
+
   &-container {
     padding-bottom: 2.5rem;
   }
@@ -63,6 +70,8 @@ import { RouterLink, RouterView } from 'vue-router'
   z-index: 99;
 
   background-color: #00000079;
+  backdrop-filter: blur(8.3px);
+  -webkit-backdrop-filter: blur(8.3px);
 }
 
 .logo {
@@ -72,8 +81,13 @@ import { RouterLink, RouterView } from 'vue-router'
 
 .footer {
   position: absolute;
+
   background-color: #00000025;
+  backdrop-filter: blur(8.3px);
+  -webkit-backdrop-filter: blur(8.3px);
+
   text-align: center;
+
   bottom: 0px;
   height: 2.5rem;
 
@@ -121,6 +135,58 @@ nav {
     }
   }
 
+}
+
+//floating icon style and animation
+
+.floating-icon {
+  width: 100px;
+
+  position: absolute;
+
+  top: -20%;
+}
+
+.position {
+  &-1 {
+    right: 10%;
+
+    animation: animOne 3s linear infinite;
+  }
+  &-2 {
+    right: 40%;
+
+    animation: animTwo 2.5s linear infinite;
+  }
+  &-3 {
+    right: 80%;
+
+    animation: animThree 3.2s linear infinite;
+  }
+}
+
+@keyframes animOne {
+  from {
+    transform: translateY(-20vh) translateX(-10vw) rotate(0);
+  } to {
+    transform: translateY(150vh) translateX(-30vw) rotate(170deg);
+  }
+}
+
+@keyframes animTwo {
+  from {
+    transform: translateY(-20vh) translateX(10vw) rotate(10deg);
+  } to {
+    transform: translateY(150vh) translateX(35vw) rotate(220deg);
+  }
+}
+
+@keyframes animThree {
+  from {
+    transform: translateY(-20vh) translateX(30vw) rotate(15deg);
+  } to {
+    transform: translateY(150vh) translateX(-20vw) rotate(150deg);
+  }
 }
 
 //view transition style

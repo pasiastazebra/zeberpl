@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="a" data-name="Warstwa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 162.24 231.88">
+  <rect x="3" y="3" width="156.24" height="225.88" rx="78.12" ry="78.12" style="fill: #bfc2e3; stroke: #1d1d1b; stroke-miterlimit: 10; stroke-width: 6px;"/>
+  <polyline points="3 81.12 81.12 81.12 159.24 81.12" style="fill: #bfc2e3; stroke: #1d1d1b; stroke-miterlimit: 10; stroke-width: 6px;"/>
+  <line x1="81.12" y1="3" x2="81.12" y2="81.12" style="fill: #bfc2e3; stroke: #1d1d1b; stroke-miterlimit: 10; stroke-width: 6px;"/>
+  <rect x="63.24" y="49.12" width="35.76" height="64" rx="17.88" ry="17.88" style="fill: #bfc2e3; stroke: #1d1d1b; stroke-miterlimit: 10; stroke-width: 6px;"/>
+</svg>
