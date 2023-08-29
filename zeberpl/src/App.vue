@@ -92,7 +92,7 @@ nav {
   
   a {
     display: inline-block;
-    padding: 0 25px;
+    padding: 2px 25px;
     font-size: 20px;
     text-decoration: none;
     color: var.$text;
@@ -100,10 +100,14 @@ nav {
 
     &.router-link-exact-active {
       color: darken($color: var.$text, $amount: 20%);
+      background: #2b58e936;
+      border-radius: 25px;
     }
 
     &:hover {
       color: darken($color: var.$text, $amount: 10%);
+      background: #2b57e90c;
+      border-radius: 25px;
     }
   }
 
