@@ -27,6 +27,8 @@ export default {
         max-width: 300px;
         border-radius: 5px;
 
+        margin: 5px 25px;
+
         -webkit-box-shadow: 5px 5px 7px -1px rgba(66, 68, 90, 1);
         -moz-box-shadow: 5px 5px 7px -1px rgba(66, 68, 90, 1);
         box-shadow: 5px 5px 7px -1px rgba(66, 68, 90, 1);

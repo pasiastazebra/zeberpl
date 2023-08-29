@@ -1,6 +1,8 @@
 <script setup>
 import contact from '../contact.vue';
 
+const siteText = 'Feel free to reach me there!'
+
 const linkedIn = {
     url: 'https://www.linkedin.com/in/konrad-semik-9a4206228/',
     img: 'src/assets/contact/linkedin.svg',
@@ -26,12 +28,15 @@ const gitHub = {
 
 <template>
     <div class="article-wrapper">
-        <h1>Contact</h1>
-        <div class="contact-wrapper">
-        <contact :contact="linkedIn"/>
-        <contact :contact="twitter" />
-        <contact :contact="gitHub" />
-        </div> 
+        <h1 class="text">Contact</h1>
+        <p class="text">{{ siteText }}</p>
+        <div class="center">
+            <div class="contact-wrapper">
+            <contact :contact="linkedIn"/>
+            <contact :contact="twitter" />
+            <contact :contact="gitHub" />
+            </div> 
+        </div>
     </div>
 </template>
 
@@ -41,5 +46,23 @@ const gitHub = {
  .contact-wrapper {
     display: grid;
     grid-template-columns: 30% 30% 30%;
+ }
+
+ .text {
+    text-align: center;
+ }
+
+ .center {
+    display: flex;
+    justify-content: center;
+ }
+
+ h1 {
+    font-size: 40px;
+    margin-bottom: 1px;
+ }
+
+ p {
+    font-size: 18px;
  }
 </style>
