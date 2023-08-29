@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="a" data-name="Warstwa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 36.41 36.41">
+  <defs>
+    <linearGradient id="b" data-name="Gradient bez nazwy 7" x1="24.42" y1=".99" x2="11.5" y2="36.79" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#205296"/>
+      <stop offset=".12" stop-color="#215699"/>
+      <stop offset="1" stop-color="#2b75b4"/>
+    </linearGradient>
+    <linearGradient id="c" data-name="Gradient bez nazwy 10" x1="24.09" y1="7.06" x2="9.42" y2="34.83" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2b265f"/>
+      <stop offset=".05" stop-color="#322561"/>
+      <stop offset=".64" stop-color="#7e1c76"/>
+      <stop offset=".9" stop-color="#9d197f"/>
+    </linearGradient>
+    <filter id="d" data-name="drop-shadow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="1"/>
+      <feGaussianBlur result="e" stdDeviation="0"/>
+      <feFlood flood-color="#000" flood-opacity="1"/>
+      <feComposite in2="e" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect width="36.41" height="36.41" rx="7.5" ry="7.5" style="fill: url(#b);"/>
+  <polygon points="25.48 10.43 28.23 5.25 22.01 5.25 8.18 5.25 8.18 10.43 19.24 10.43 16.8 14.99 16.4 15.75 16.4 15.76 10.95 25.97 8.18 31.15 28.23 31.15 28.23 25.97 17.21 25.97 25.48 10.43" style="fill: url(#c); filter: url(#d);"/>
+</svg>
