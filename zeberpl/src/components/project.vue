@@ -9,7 +9,9 @@ export default {
 <template>
     <div class="project-container">
         <h2 class="project-title">{{ project.title }}</h2>
-        <img :src="project.img" :alt="project.title + ' screenshot'" class="project-image">
+        <div class="centered">
+            <img :src="project.img" :alt="project.title + ' screenshot'" class="project-image">
+        </div>
         <p class="project-description">{{ project.desc }}</p>
         <div class="project-buttons">
             <form class="project-buttons-cover">
@@ -34,8 +36,9 @@ export default {
         backdrop-filter: blur(8.3px);
         -webkit-backdrop-filter: blur(8.3px);
 
-        margin: 5px;
-        width: 45%;
+        margin: 25px;
+        width: 40%;
+
     }
 
     &-title {
@@ -105,5 +108,10 @@ export default {
             }
         }
     }
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
 }
 </style>
