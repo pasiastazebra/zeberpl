@@ -131,4 +131,23 @@ p {
   color: var.$text;
 }
 
+
+  * {
+    scrollbar-width: none;
+    scrollbar-color: var.$background-shade var.$background;
+  }
+
+  *::-webkit-scrollbar {
+    width: 13px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: var.$background-shade;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: var.$background;
+    border-radius: 7px;
+  }
+
 </style>
