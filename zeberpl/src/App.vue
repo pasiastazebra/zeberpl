@@ -16,7 +16,11 @@ import { RouterLink, RouterView } from 'vue-router'
         </div>
       </header>
       
-      <RouterView />
+      <RouterView v-slot="{ Component }">
+        <transition name="fade" mode="out-in"> 
+          <component :is="Component" />
+        </transition>
+      </RouterView>
     </div>
     
     <footer class="wrapper footer">
@@ -117,6 +121,18 @@ nav {
     }
   }
 
+}
+
+//view transition style
+
+.fade {
+  &-enter-from, &-leave-to {
+    opacity: 0;
+  }
+
+  &-enter-active, &-leave-active {
+    transition: opacity 0.3s ease-out;
+  }
 }
 
 //global styles
