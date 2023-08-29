@@ -36,7 +36,7 @@ const loginDemo = new Project('Log In form demo',
 </template>
 
 <style scoped lang="scss">
- @use "../../assets/ViewsStyle";
+ @use "../../assets/styles/ViewsStyle";
 
  .projects {
     display: flex;

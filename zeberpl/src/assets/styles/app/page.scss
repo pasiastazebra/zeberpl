@@ -1,0 +1,10 @@
+.page {
+    position: relative;
+    min-height: 100vh;
+  
+    contain: paint; // <<-- Preventing animations to extend the website height
+  
+    &-container {
+      padding-bottom: 2.5rem;
+    }
+  }

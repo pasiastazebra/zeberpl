@@ -1,0 +1,36 @@
+@use '../variables.scss' as var;
+
+body {
+    font-family: 'Sarabun', sans-serif;
+    background: linear-gradient(225deg,var.$background 0%, var.$background-shade 100%);
+    margin: 0%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+  }
+  
+  h1, h2, h3 {
+    color: var.$text;
+  }
+  
+  p {
+    color: var.$text;
+  }
+  
+  
+    * {
+      scrollbar-width: none;
+      scrollbar-color: var.$background-shade var.$background;
+    }
+  
+    *::-webkit-scrollbar {
+      width: 13px;
+    }
+  
+    *::-webkit-scrollbar-track {
+      background: var.$background-shade;
+    }
+  
+    *::-webkit-scrollbar-thumb {
+      background-color: var.$background;
+      border-radius: 7px;
+    }

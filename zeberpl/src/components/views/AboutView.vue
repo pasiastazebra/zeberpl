@@ -124,7 +124,7 @@ const iWant = [
 </template>
 
 <style scoped lang="scss">
- @use "../../assets/ViewsStyle";
+ @use "../../assets/styles/ViewsStyle";
 
  .stack {
     display: grid;

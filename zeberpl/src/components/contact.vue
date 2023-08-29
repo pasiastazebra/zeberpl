@@ -17,7 +17,7 @@ export default {
 </template>
 
 <style scoped lang="scss">
-@use "../assets/variables" as var;
+@use "../assets/styles/variables" as var;
 
 .contact {
     &-wrapper {

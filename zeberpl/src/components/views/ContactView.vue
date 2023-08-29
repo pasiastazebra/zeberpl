@@ -41,7 +41,7 @@ const gitHub = {
 </template>
 
 <style scoped lang="scss">
- @use "../../assets/ViewsStyle";
+ @use "../../assets/styles/ViewsStyle";
 
  .contact-wrapper {
     display: grid;
