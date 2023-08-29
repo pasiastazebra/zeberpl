@@ -52,7 +52,13 @@ import { RouterLink, RouterView } from 'vue-router'
 .header {
   position: sticky;
   top: 0;
-  height: 70px;
+  height: 50px;
+
+  padding-top: 15px;
+
+  z-index: 99;
+
+  background-color: #00000079;
 }
 
 .logo {
@@ -89,7 +95,7 @@ import { RouterLink, RouterView } from 'vue-router'
 }
 nav {
   margin-right: 35px;
-  
+
   a {
     display: inline-block;
     padding: 2px 25px;
