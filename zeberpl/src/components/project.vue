@@ -8,7 +8,7 @@ export default {
 
 <template>
     <div class="project-container">
-        <h3 class="project-title">{{ project.title }}</h3>
+        <h2 class="project-title">{{ project.title }}</h2>
         <img :src="project.img" :alt="project.title + ' screenshot'" class="project-image">
         <p class="project-description">{{ project.desc }}</p>
         <div class="project-buttons">
@@ -48,6 +48,12 @@ export default {
 
         border: none;
         border-radius: 20px;
+
+        transition: 0.2s;
+
+        &:hover {
+            scale: 105%;
+        }
         
     }
 

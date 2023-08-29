@@ -49,5 +49,12 @@ export default {
 .icon {
     max-width: 60px;
     margin: 5px;
+
+    transition: 0.3s;
+
+    &:hover {
+        scale: 125%;
+        rotate: 15deg;
+    }
 }
 </style>
