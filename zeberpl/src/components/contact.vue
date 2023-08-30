@@ -25,7 +25,7 @@ export default {
         display: flex;
 
         max-width: 300px;
-        border-radius: 5px;
+        border-radius: 9px;
 
         margin: 5px 25px;
 
@@ -61,7 +61,7 @@ export default {
 
         padding: 5px 3px;
 
-        font-size: 15px;
+        font-size: 18px;
 
         &:focus {
             outline: none;

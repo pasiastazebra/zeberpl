@@ -1,5 +1,13 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import { ref } from 'vue';
+import { RouterLink, RouterView } from 'vue-router';
+
+const isMobileMenuOpen = ref(false);
+
+const toggleMobileMenu = () => {
+  isMobileMenuOpen.value = !isMobileMenuOpen.value;
+};
+
 </script>
 
 <template>
@@ -11,16 +19,17 @@ import { RouterLink, RouterView } from 'vue-router'
     </div>
     <div class="page-container">
       <header class="wrapper header">
-        <div class="inner-header">
+          <button class="header-hamburger" @click="toggleMobileMenu" :class="{ 'mobile-menu': isMobileMenuOpen }">
+            <span class="header-hamburger-box">
+              <span class="header-hamburger-box-inner"></span>
+            </span>
+          </button>
           <img alt="logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-          <nav>
-            <RouterLink to="/">Home</RouterLink>
-            <RouterLink to="/projects">Projects</RouterLink>
-            <RouterLink to="/contact">Contact</RouterLink>
+          <nav class="navbar">
+            <RouterLink class="navbar-link" to="/">Home</RouterLink>
+            <RouterLink class="navbar-link" to="/projects">Projects</RouterLink>
+            <RouterLink class="navbar-link" to="/contact">Contact</RouterLink>
           </nav>
-        </div>
-
-        
       </header>
       
       <RouterView v-slot="{ Component }">
@@ -51,5 +60,7 @@ import { RouterLink, RouterView } from 'vue-router'
 @use './assets/styles/app/global.scss';
 
 @import url('https://fonts.googleapis.com/css2?family=Sarabun&display=swap');
+
+
 
 </style>
