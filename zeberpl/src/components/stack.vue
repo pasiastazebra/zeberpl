@@ -61,7 +61,7 @@ export default {
 @media only screen and (min-width: 768px){
     .stack-container {
         margin: 5px;
-        min-width: 190px;
+        min-width: 15VW;
     }
  }
  

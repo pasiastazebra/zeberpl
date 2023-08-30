@@ -111,9 +111,9 @@ const iWant = [
 <template>
     <div class="article-wrapper">
         <h1>Home</h1>
-        <h2>About me</h2>
-        <p>{{ aboutMe }}</p>
-        <h2>(Not only) tech stack</h2>
+        <h2 class="title">About me</h2>
+        <article class="article" >{{ aboutMe }}</article>
+        <h2 class="title">(Not only) tech stack</h2>
         <div class="center">
             <div class="stack">
                 <stack class="stack-item" :icons="iUse" :title="'I use'"/>
@@ -136,6 +136,14 @@ const iWant = [
     }
  }
 
+ .title {
+    text-align: center;
+ }
+
+ .article {
+    margin: 5px 5vw;
+    font-size: 14px;
+ }
  .center {
     display: flex;
     justify-content: center;
@@ -144,6 +152,11 @@ const iWant = [
  @media only screen and (min-width: 768px){
     .stack {
     display: flex;
- }
+    justify-content: center;
+    }
+
+    .article {
+        font-size: 16px;
+    }
  }
 </style>
