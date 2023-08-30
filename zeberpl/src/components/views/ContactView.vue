@@ -28,14 +28,16 @@ const gitHub = {
 
 <template>
     <div class="article-wrapper">
-        <h1 class="text">Contact</h1>
-        <p class="text">{{ siteText }}</p>
-        <div class="center">
-            <div class="contact-wrapper">
-            <contact :contact="linkedIn"/>
-            <contact :contact="twitter" />
-            <contact :contact="gitHub" />
-            </div> 
+        <div class="inside-wrapper">
+            <h1 class="text">Contact</h1>
+            <p class="text">{{ siteText }}</p>
+            <div class="center">
+                <div class="contact-wrapper">
+                    <contact class="item" :contact="linkedIn"/>
+                    <contact class="item" :contact="twitter" />
+                    <contact class="item" :contact="gitHub" />
+                </div> 
+            </div>
         </div>
     </div>
 </template>
@@ -43,9 +45,12 @@ const gitHub = {
 <style scoped lang="scss">
  @use "../../assets/styles/ViewsStyle";
 
+ .inside-wrapper {
+    margin-top: 10vh;
+ }
+
  .contact-wrapper {
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
+    display: block;
  }
 
  .text {
@@ -57,6 +62,10 @@ const gitHub = {
     justify-content: center;
  }
 
+ .item {
+    margin: 20px
+ }
+
  h1 {
     font-size: 40px;
     margin-bottom: 1px;
@@ -64,5 +73,16 @@ const gitHub = {
 
  p {
     font-size: 18px;
+ }
+
+ @media only screen and (min-width: 950px) {
+    .contact-wrapper {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    }
+
+    .item {
+        margin: auto;
+    }
  }
 </style>
