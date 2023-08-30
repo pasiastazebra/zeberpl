@@ -51,13 +51,6 @@ export default {
 
         border: none;
         border-radius: 20px;
-
-        transition: 0.2s;
-
-        &:hover {
-            scale: 105%;
-        }
-        
     }
 
     &-description {
@@ -79,33 +72,16 @@ export default {
             border: none;
             border-radius: 50px;
             box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
-            transition : 332ms;
-            cursor: pointer;
             min-width: 50%;
             margin: 5%;
         }
 
         #source {
             background: linear-gradient(61deg, rgba(1, 116, 1, 0.6) 0%, rgba(0, 112, 65, 0.6) 100%);
-
-            &:hover{
-            transition : 332ms;
-
-            background: linear-gradient(61deg, rgba(1, 116, 1, 0.9) 0%, rgba(0, 112, 65, 0.9) 100%);
-            min-width: 70%;
-            }
         }
 
         #demo {
             background: linear-gradient(61deg, rgba(26, 1, 116, 0.6) 0%, rgba(1, 66, 126, 0.6) 100%);
-
-
-            &:hover{
-            transition : 332ms;
-
-            background: linear-gradient(61deg, rgba(26, 1, 116, 0.9) 0%, rgba(1, 66, 126, 0.9) 100%);
-            min-width: 70%;
-            }
         }
     }
 }
@@ -116,9 +92,41 @@ export default {
 }
 
 @media only screen and (min-width: 768px) {
-    .project-container {
+    .project{
+        &-container {
         margin: 25px;
         width: 40%;
+        }
+        &-image{
+            transition: 0.2s;
+            &:hover {
+            scale: 105%;
+            }
+        }
+        &-buttons {
+           button {
+            transition : 332ms;
+            cursor: pointer;
+            }
+
+            #source {
+                &:hover{
+                transition : 332ms;
+
+                background: linear-gradient(61deg, rgba(1, 116, 1, 0.9) 0%, rgba(0, 112, 65, 0.9) 100%);
+                min-width: 70%;
+                }
+            }
+
+            #demo {
+                &:hover{
+                transition : 332ms;
+
+                background: linear-gradient(61deg, rgba(26, 1, 116, 0.9) 0%, rgba(1, 66, 126, 0.9) 100%);
+                min-width: 70%;
+                }
+            }
+        }
     }
 }
 </style>
