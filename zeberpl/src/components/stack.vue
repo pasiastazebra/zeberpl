@@ -29,8 +29,7 @@ export default {
         backdrop-filter: blur(8.3px);
         -webkit-backdrop-filter: blur(8.3px);
 
-        margin: 5px;
-        min-width: 140px;
+        min-width: 25vw;
     }
     &-title {
         text-align: center;
@@ -58,4 +57,12 @@ export default {
         cursor: help;
     }
 }
+
+@media only screen and (min-width: 768px){
+    .stack-container {
+        margin: 5px;
+        min-width: 190px;
+    }
+ }
+ 
 </style>

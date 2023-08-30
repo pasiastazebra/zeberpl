@@ -114,11 +114,13 @@ const iWant = [
         <h2>About me</h2>
         <p>{{ aboutMe }}</p>
         <h2>(Not only) tech stack</h2>
-        <div class="stack">
-            <stack :icons="iUse" :title="'I use'"/>
-            <stack :icons="iKnow" :title="'I am familiar with'"/>
-            <stack :icons="ilearn" :title="'I am learning'"/>
-            <stack :icons="iWant" :title="'I want to learn'"/>
+        <div class="center">
+            <div class="stack">
+                <stack class="stack-item" :icons="iUse" :title="'I use'"/>
+                <stack class="stack-item" :icons="iKnow" :title="'I am familiar with'"/>
+                <stack class="stack-item" :icons="ilearn" :title="'I am learning'"/>
+                <stack class="stack-item" :icons="iWant" :title="'I want to learn'"/>
+            </div>
         </div>
     </div>
 </template>
@@ -127,7 +129,21 @@ const iWant = [
  @use "../../assets/styles/ViewsStyle";
 
  .stack {
-    display: grid;
-    grid-template-columns: 170px 170px 170px 170px;
+    display: block;
+
+    &-item {
+        margin: 35px 10px;
+    }
+ }
+
+ .center {
+    display: flex;
+    justify-content: center;
+ }
+
+ @media only screen and (min-width: 768px){
+    .stack {
+    display: flex;
+ }
  }
 </style>
