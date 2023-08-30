@@ -18,14 +18,14 @@ const toggleMobileMenu = () => {
       <img class="floating-icon position-3" src="./assets/bgicons/mouse.svg" alt="Floating mouse icon">
     </div>
     <div class="page-container">
-      <header class="wrapper header">
+      <header class="wrapper header" :class="{ 'mobile-menu-header': isMobileMenuOpen }">
           <button class="header-hamburger" @click="toggleMobileMenu" :class="{ 'mobile-menu': isMobileMenuOpen }">
             <span class="header-hamburger-box">
               <span class="header-hamburger-box-inner"></span>
             </span>
           </button>
           <img alt="logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-          <nav class="navbar">
+          <nav class="navbar" :class="{ 'mobile-nav': isMobileMenuOpen} ">
             <RouterLink class="navbar-link" to="/">Home</RouterLink>
             <RouterLink class="navbar-link" to="/projects">Projects</RouterLink>
             <RouterLink class="navbar-link" to="/contact">Contact</RouterLink>
