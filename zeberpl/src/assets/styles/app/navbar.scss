@@ -24,12 +24,6 @@ nav {
         background: #2b58e936;
         border-radius: 25px;
       }
-  
-      &:hover {
-        color: darken($color: var.$text, $amount: 10%);
-        background: #2b57e90c;
-        border-radius: 25px;
-      }
     }
   
   }
@@ -53,6 +47,15 @@ nav {
         padding: 2px 25px;
 
         margin: 0px 20px;
+
+        &:hover {
+          color: darken($color: var.$text, $amount: 10%);
+          background: #2b57e90c;
+          border-radius: 25px;
+
+          font-size: 21px;
+          
+        }
       }
     }
   }

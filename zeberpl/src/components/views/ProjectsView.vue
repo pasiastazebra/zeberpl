@@ -46,6 +46,6 @@ const loginDemo = new Project('Log In form demo',
     .projects {
     display: flex;
     justify-content: center;
- }
+    }
  }
 </style>
