@@ -36,8 +36,8 @@ export default {
         backdrop-filter: blur(8.3px);
         -webkit-backdrop-filter: blur(8.3px);
 
-        margin: 25px;
-        width: 40%;
+        margin: 20px;
+        width: 90%;
 
     }
 
@@ -113,5 +113,12 @@ export default {
 .centered {
     display: flex;
     justify-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .project-container {
+        margin: 25px;
+        width: 40%;
+    }
 }
 </style>

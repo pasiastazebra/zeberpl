@@ -39,7 +39,13 @@ const loginDemo = new Project('Log In form demo',
  @use "../../assets/styles/ViewsStyle";
 
  .projects {
+    display: block;
+ }
+
+ @media only screen and (min-width: 768px){
+    .projects {
     display: flex;
     justify-content: center;
+ }
  }
 </style>
