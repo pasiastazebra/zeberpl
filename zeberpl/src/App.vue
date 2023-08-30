@@ -19,6 +19,8 @@ import { RouterLink, RouterView } from 'vue-router'
             <RouterLink to="/contact">Contact</RouterLink>
           </nav>
         </div>
+
+        
       </header>
       
       <RouterView v-slot="{ Component }">
@@ -37,6 +39,7 @@ import { RouterLink, RouterView } from 'vue-router'
 </template>
 
 <style lang="scss">
+
 @use './assets/styles/variables' as var;
 @use './assets/styles/app/page.scss';
 @use './assets/styles/app/wrapper.scss';
@@ -48,10 +51,5 @@ import { RouterLink, RouterView } from 'vue-router'
 @use './assets/styles/app/global.scss';
 
 @import url('https://fonts.googleapis.com/css2?family=Sarabun&display=swap');
-
-
-//global styles
-
-
 
 </style>
