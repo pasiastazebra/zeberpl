@@ -9,8 +9,9 @@ cd zeberpl
 npm install
 npm run dev
 
-# Building project
 ```
+
+# Building project
 npm run build
 ```
 ```
