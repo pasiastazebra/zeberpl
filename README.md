@@ -8,7 +8,6 @@
 cd zeberpl
 npm install
 npm run dev
-
 ```
 
 # Building project
