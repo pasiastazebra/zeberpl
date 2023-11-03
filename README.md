@@ -12,6 +12,6 @@ npm run dev
 ```
 
 # Building project
-npm run build
 ```
+npm run build
 ```
