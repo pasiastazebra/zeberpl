@@ -26,9 +26,9 @@ const toggleMobileMenu = () => {
           </button>
           <img alt="logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
           <nav class="navbar" :class="{ 'mobile-nav': isMobileMenuOpen} ">
-            <RouterLink class="navbar-link" to="/">Home</RouterLink>
-            <RouterLink class="navbar-link" to="/projects">Projects</RouterLink>
-            <RouterLink class="navbar-link" to="/contact">Contact</RouterLink>
+            <RouterLink class="navbar-link" to="/" @click="toggleMobileMenu">Home</RouterLink>
+            <RouterLink class="navbar-link" to="/projects" @click="toggleMobileMenu">Projects</RouterLink>
+            <RouterLink class="navbar-link" to="/contact" @click="toggleMobileMenu">Contact</RouterLink>
           </nav>
       </header>
       
