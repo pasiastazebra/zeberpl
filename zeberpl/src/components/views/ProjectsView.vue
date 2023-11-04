@@ -15,11 +15,11 @@ const passwordGenerator = new Project('Password generator',
                                       'https://github.com/pasiastazebra/password-generator',
                                       'https://pasiastazebra.github.io/password-generator' );
 
-const loginDemo = new Project('Log In form demo', 
+const spendingCalc = new Project('Spendings calculator', 
                               'src/assets/projects/login.png',
-                              'Simple Font-End only demo of a log in form. Currently missing browser-side authentication.',
-                              'https://github.com/pasiastazebra/password-generator',
-                              'https://pasiastazebra.github.io/login-form-demo' );
+                              'Simple spendings calculator made in vanilla JS. It uses local storage to store data and ExcelJS to export it to downloadable spreadsheet.',
+                              'https://github.com/pasiastazebra/spendingcalculator',
+                              'https://pasiastazebra.github.io/spendingcalculator/' );
 
 
 </script>
@@ -29,7 +29,7 @@ const loginDemo = new Project('Log In form demo',
         <h1>Projects</h1>
         <div class="projects">
             <project :project="passwordGenerator" />
-            <project :project="loginDemo" />
+            <project :project="spendingCalc" />
         </div>
 
    </div>
