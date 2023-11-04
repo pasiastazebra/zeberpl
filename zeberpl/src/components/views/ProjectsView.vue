@@ -24,8 +24,8 @@ const spendingCalc = new Project('Spendings calculator',
 const currencyExchange = new Project('Currency exchange calculator', 
                               'src/assets/projects/exchange.png',
                               'Very simple exchange rate calculator, which uses API to get current data.',
-                              'https://github.com/pasiastazebra/spendingcalculator',
-                              'https://pasiastazebra.github.io/spendingcalculator/' );
+                              'https://github.com/pasiastazebra/exchangerate',
+                              'https://pasiastazebra.github.io/exchangerate/' );
 
 
 </script>
