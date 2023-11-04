@@ -16,7 +16,7 @@ const passwordGenerator = new Project('Password generator',
                                       'https://pasiastazebra.github.io/password-generator' );
 
 const spendingCalc = new Project('Spendings calculator', 
-                              'src/assets/projects/login.png',
+                              'src/assets/projects/spendings.png',
                               'Simple spendings calculator made in vanilla JS. It uses local storage to store data and ExcelJS to export it to downloadable spreadsheet.',
                               'https://github.com/pasiastazebra/spendingcalculator',
                               'https://pasiastazebra.github.io/spendingcalculator/' );
