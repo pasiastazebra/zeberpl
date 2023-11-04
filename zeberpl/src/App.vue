@@ -13,9 +13,9 @@ const toggleMobileMenu = () => {
 <template>
   <div class="page">
     <div class="bg-icons">
-      <img class="floating-icon position-1" src="./assets/bgicons/keyboard.svg" alt="Floating keyboard icon">
-      <img class="floating-icon position-2" src="./assets/bgicons/monitor.svg" alt="Floating monitor icon">
-      <img class="floating-icon position-3" src="./assets/bgicons/mouse.svg" alt="Floating mouse icon">
+      <img class="floating-icon position-1" src="./assets/bgicons/keyboard.svg" alt="">
+      <img class="floating-icon position-2" src="./assets/bgicons/monitor.svg" alt="">
+      <img class="floating-icon position-3" src="./assets/bgicons/mouse.svg" alt="">
     </div>
     <div class="page-container">
       <header class="wrapper header" :class="{ 'mobile-menu-header': isMobileMenuOpen }">
