@@ -21,6 +21,12 @@ const spendingCalc = new Project('Spendings calculator',
                               'https://github.com/pasiastazebra/spendingcalculator',
                               'https://pasiastazebra.github.io/spendingcalculator/' );
 
+const currencyExchange = new Project('Currency exchange calculator', 
+                              'src/assets/projects/exchange.png',
+                              'Very simple exchange rate calculator, which uses API to get current data.',
+                              'https://github.com/pasiastazebra/spendingcalculator',
+                              'https://pasiastazebra.github.io/spendingcalculator/' );
+
 
 </script>
 
@@ -30,6 +36,7 @@ const spendingCalc = new Project('Spendings calculator',
         <div class="projects">
             <project :project="passwordGenerator" />
             <project :project="spendingCalc" />
+            <project :project="currencyExchange" />
         </div>
 
    </div>
